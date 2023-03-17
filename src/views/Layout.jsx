@@ -12,6 +12,7 @@ module.exports = function Layout({ children, user }) {
         <link rel="stylesheet" href="/style/adminRoom.css" />
         <link rel="stylesheet" href="/style/registration.css" />
         <link rel="stylesheet" href="/style/alert.css" />
+        <link rel="stylesheet" href="/style/error.css" />
         <meta charSet="UTF-8" />
         <script defer src="" />
         <title />

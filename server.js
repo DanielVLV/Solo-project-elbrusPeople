@@ -12,6 +12,7 @@ const registration = require('./src/routes/registration.router');
 const logout = require('./src/routes/logout');
 const userRoom = require('./src/routes/userRoom');
 const adminRoom = require('./src/routes/adminRoom');
+const errorPage = require('./src/routes/error');
 
 const app = express();
 const { PORT, COOKIE_SEKRET } = process.env;
@@ -43,6 +44,7 @@ app.get('/registration', registration);
 app.get('/login', login);
 app.get('/profile', userRoom);
 app.get('/adminRoom', adminRoom);
+app.get('/404', errorPage);
 
 app.post('/registration', registration);
 app.post('/login', login);
