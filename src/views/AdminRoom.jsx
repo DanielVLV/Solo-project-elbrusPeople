@@ -17,7 +17,7 @@ module.exports = function Home({ user, allUsers }) {
               {allUsers.map((el) => (
                 <div className="cardAndDelBtn">
                   <User el={el} />
-                  <a className="delBtn" id="deliteUser" data-id={el.id}>Delite</a>
+                  <a className="delBtn" id="deliteUser" data-id={el.id}>Delete</a>
                 </div>
               ))}
             </>

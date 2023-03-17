@@ -21,7 +21,7 @@ button.addEventListener('click', async (event) => {
     }),
   });
   const json = await responce.json();
-  if (json === 'Fill in all fields FREAK') {
+  if (json === 'Fill in all fields cucumber') {
     const div = document.createElement('div');
     div.className = 'alert';
     div.innerText = json;
