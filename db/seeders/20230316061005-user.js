@@ -71,6 +71,16 @@ module.exports = {
       createdAt: new Date(),
       updatedAt: new Date(),
     },
+    {
+      firstName: 'Daniel',
+      lastName: 'Vieru',
+      avatar: 'https://avatars.githubusercontent.com/u/122006977?s=400&u=5b6fa773da018a0fae427cf2f5d6bcfb0d3abee3&v=4',
+      country: 'Tbilisi',
+      email: 'daniel@.ru',
+      password: '$2b$10$wJk5gzOyoqdW/HbZiU5YEOAaRVyWywg2U.ftVN/JwSBa4kKsJHuBu',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
     ], {});
   },
 

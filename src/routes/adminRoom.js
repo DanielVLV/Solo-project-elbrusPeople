@@ -2,8 +2,9 @@ const router = require('express').Router();
 const renderTemplate = require('../renderTemplate');
 const AdminRoom = require('../views/AdminRoom');
 const { User } = require('../../db/models');
+const isAdmin = require('../middleware/admin');
 
-router.get('/adminRoom', async (req, res) => {
+router.get('/adminRoom', isAdmin, async (req, res) => {
   const { user } = req.session;
   try {
     const allUsers = await User.findAll({ raw: true });
@@ -13,7 +14,7 @@ router.get('/adminRoom', async (req, res) => {
   }
 });
 
-router.post('/adminRoom', async (req, res) => {
+router.post('/adminRoom', isAdmin, async (req, res) => {
   try {
     const { id } = req.body;
     await User.destroy({ where: { id }, raw: true });

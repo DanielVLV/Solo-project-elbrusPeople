@@ -2,8 +2,9 @@ const router = require('express').Router();
 const renderTemplate = require('../renderTemplate');
 const UserRoom = require('../views/UserRoom');
 const { User } = require('../../db/models');
+const isUser = require('../middleware/profile');
 
-router.get('/profile', async (req, res) => {
+router.get('/profile', isUser, async (req, res) => {
   const { user } = req.session;
   try {
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${user?.country}&appid=c3fbb2aaf544bea7317e107f22d2b2c3&units=metric`);
@@ -28,14 +29,13 @@ router.get('/profile', async (req, res) => {
     const timeString = localTime.toLocaleTimeString('en-US', options);
     user.time = `in ${user?.country} now ${timeString} hours and temp ${Math.round(json?.main?.temp_max)} °C`;
 
-
     renderTemplate(UserRoom, { user }, res);
   } catch (error) {
     console.log(error);
   }
 });
 
-router.post('/profile', async (req, res) => {
+router.post('/profile', isUser, async (req, res) => {
   const {
     id, firstName, lastName, avatar, country,
   } = req.body;
