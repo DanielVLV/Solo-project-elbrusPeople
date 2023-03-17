@@ -1,0 +1,19 @@
+.alert {
+    text-align: center;
+    color: rgba(215, 115, 115, 0.899);
+    margin: 15px;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 3px;
+    /* font-size: 30px; */
+    /* color: red; */
+}
+
+.baddy {
+    text-align: center;
+    color: rgba(115, 215, 123, 0.899);
+    margin: 15px;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 3px;
+}

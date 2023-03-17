@@ -1,0 +1,28 @@
+/* body {
+    background: white;
+    margin: 0
+} */
+
+body {
+    background: rgba(0, 0, 0, 0.722);
+    margin: 0
+}
+
+.homeAllDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1 {
+    cursor: default;
+    font-family: cursive;
+    text-align: center;
+    color: #36a9de;
+    position: relative;
+    z-index: 10;
+    -webkit-mask-box-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%,rgb(19, 18, 18)), color-stop(100%,rgba(21, 20, 20, 0)));
+}
+
+
+

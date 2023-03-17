@@ -1,0 +1,82 @@
+ .userCardAllDiv {
+        display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px 10px 5px;
+    margin: 30px;
+    /* border: 2px rgba(141, 141, 141, 0.575) ridge; */
+    border-radius: 20px;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    color: rgba(172, 172, 172, 0.883);
+    /* font-family: cursive; */
+    font-size: 20px;
+    line-height: 33px;
+    cursor: default;
+    background: rgb(116 101 101);
+	-webkit-transition: background 0.5s linear 0s;
+	-moz-transition: background 0.5s linear 0s;
+	-o-transition: background 0.5s linear 0s;
+	transition: background 0.5s linear 0s;
+}
+
+.userCardAllDiv:hover {
+    transform: scale(1.1);
+    color: rgb(227, 227, 227);
+    box-shadow: 2px 2px 10px rgb(51 68 85 / 98%);
+    /* background-color: rgb(223, 255, 253) ; */
+    transition: transform 0.5s ease;
+    
+}
+
+.icon {
+    height: 80px;
+    width: 80px;
+}
+
+
+
+.email {
+    font-weight: 800;
+}
+
+.userAvatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+  
+.avatarImg {
+    margin-right: 40px;
+    height: 200px;
+    border-radius: 10px;
+    border: rgb(168 168 168) solid;
+    box-shadow: 2px 2px 10px rgb(51 68 85 / 98%);
+}
+  
+.userInfo {
+    display: flex;
+    flex-direction: column;
+}
+  
+.firstName {
+
+}
+  
+.lastName {
+  
+}
+  
+.country {
+  
+}
+  
+.time {
+
+}
+  
+.temp {
+  
+} 
