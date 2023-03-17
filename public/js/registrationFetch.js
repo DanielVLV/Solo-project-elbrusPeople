@@ -3,6 +3,7 @@ const firstName = document.getElementById('firstName');
 const lastName = document.getElementById('lasttName');
 const country = document.getElementById('country');
 const email = document.getElementById('email');
+const avatar = document.getElementById('avatar');
 const password = document.getElementById('password');
 const body = document.querySelector('body');
 // const registrationAllDiv = document.getElementById('registrationAllDiv');
@@ -18,6 +19,7 @@ button.addEventListener('click', async (event) => {
       lastName: lastName.value,
       country: country.value,
       email: email.value,
+      avatar: avatar.value,
       password: password.value,
     }),
   });
@@ -36,7 +38,7 @@ button.addEventListener('click', async (event) => {
   if (json === 'Registration completed successfully') {
     const div = document.createElement('div');
     div.innerText = json;
-    div.className = 'alert';
+    div.className = 'alert baddy';
     // alert(json);
     body.appendChild(div);
     setTimeout(() => {
@@ -45,7 +47,7 @@ button.addEventListener('click', async (event) => {
   }
   if (json === 'User already registered') {
     const div = document.createElement('div');
-    div.className = 'alert';
+    div.className = 'alert already';
     div.innerText = json;
     body.appendChild(div);
     setTimeout(() => {

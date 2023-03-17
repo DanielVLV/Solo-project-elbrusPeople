@@ -10,10 +10,14 @@
 }
 
 .baddy {
-    text-align: center;
+    /* text-align: center; */
     color: rgba(115, 215, 123, 0.899);
-    margin: 15px;
+    /* margin: 15px;
     padding: 20px;
     font-size: 25px;
-    border-radius: 3px;
+    border-radius: 3px; */
+}
+
+.already {
+    color: rgba(215, 203, 115, 0.899);
 }

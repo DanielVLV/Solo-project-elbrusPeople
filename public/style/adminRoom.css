@@ -14,7 +14,8 @@
 .delBtn {
     cursor: pointer;
     text-decoration:none;
-    color: rgba(92, 92, 92, 0.676);
+    /* color: rgba(92, 92, 92, 0.676); */
+    color: rgba(217, 217, 217, 0.676);
     /* margin: 5px; */
     padding: 10px;
     font-size: 25px;
