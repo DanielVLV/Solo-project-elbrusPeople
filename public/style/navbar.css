@@ -2,13 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
-    
     box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.572);
   }
   
   .navbarLeftDiv {
     margin-right: auto;
+    display: flex;
+    align-items: center;
   }
   
   .navbarRightDiv {
@@ -45,4 +45,11 @@
     font-size: 25px;
     text-align: center;
     cursor: default;
+}
+
+.tiger {
+    max-width: 70px;
+    filter: invert(100%);
+    opacity: 60%;
+    margin-left: 20px;
 }

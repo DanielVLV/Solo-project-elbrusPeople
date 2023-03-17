@@ -9,6 +9,7 @@ module.exports = function Navbar({ user }) {
             <div className="navbarAllDiv">
               <div className="navbarLeftDiv">
                 <a className="aNavbar" href="/">Elbrus People</a>
+                <img className="tiger" src="img/tiger.png" />
               </div>
               <div className="navbarRightDiv">
                 <span className="helloUser">{`Hello ${user.firstName}`}</span>
@@ -22,6 +23,7 @@ module.exports = function Navbar({ user }) {
             <div className="navbarAllDiv">
               <div className="navbarLeftDiv">
                 <a className="aNavbar" href="/">Elbrus People</a>
+                <img className="tiger" src="img/tiger.png" />
               </div>
               <div className="navbarRightDiv">
                 <span className="helloUser">{`Hello ${user.firstName}`}</span>
@@ -35,6 +37,7 @@ module.exports = function Navbar({ user }) {
         <div className="navbarAllDiv">
           <div className="navbarLeftDiv">
             <a className="aNavbar" href="/">Elbrus People</a>
+            <img className="tiger" src="img/tiger.png" />
           </div>
           <div className="navbarRightDiv">
             <a className="aNavbar" href="/registration">Registration</a>
